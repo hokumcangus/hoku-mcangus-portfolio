@@ -2,9 +2,9 @@ import type { RenderOptions } from "@testing-library/react"
 import { render } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import type { PropsWithChildren, ReactElement } from "react"
-import { Provider } from "react-redux"
-import type { AppStore, RootState } from "../app/store"
-import { makeStore } from "../app/store"
+// import { Provider } from "react-redux"
+// import type { AppStore, RootState } from "../app/store"
+// import { makeStore } from "../app/store"
 
 /**
  * This type extends the default options for
@@ -19,7 +19,7 @@ type ExtendedRenderOptions = Omit<RenderOptions, "queries"> & {
    * controlled manner during testing, allowing components to be rendered
    * with predetermined state conditions.
    */
-  preloadedState?: Partial<RootState>
+  // preloadedState?: Partial<RootState>
 
   /**
    * Allows the use of a specific Redux store instance instead of a
@@ -30,7 +30,7 @@ type ExtendedRenderOptions = Omit<RenderOptions, "queries"> & {
    *
    * @default makeStore(preloadedState)
    */
-  store?: AppStore
+  // store?: AppStore
 }
 
 /**
@@ -46,19 +46,19 @@ export const renderWithProviders = (
   extendedRenderOptions: ExtendedRenderOptions = {},
 ) => {
   const {
-    preloadedState = {},
+    // preloadedState = {},
     // Automatically create a store instance if no store was passed in
-    store = makeStore(preloadedState),
+    // store = makeStore(preloadedState),
     ...renderOptions
   } = extendedRenderOptions
 
   const Wrapper = ({ children }: PropsWithChildren) => (
-    <Provider store={store}>{children}</Provider>
-  )
+    // <Provider store={store}>{children}</Provider>
+    <>{children}</>)
 
   // Return an object with the store and all of RTL's query functions
   return {
-    store,
+    // store,
     user: userEvent.setup(),
     ...render(ui, { wrapper: Wrapper, ...renderOptions }),
   }

@@ -1,35 +1,34 @@
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  { ignores: ['dist'] },
+  {
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommended,
+    ],
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      'react/jsx-uses-react': 'off',
+      'react/react-in-jsx-scope': 'off',
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
   },
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin'
-  ],
-  overrides: [
-    {
-      env: {
-        node: true
-      },
-      files: ['.eslintrc.{js,cjs}'],
-      parserOptions: {
-        sourceType: 'script'
-        }
-    }
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: './tsconfig.json'
-  },
-  plugins: ['@typescript-eslint', 'react'],
-  rules: {}
-};
+);
