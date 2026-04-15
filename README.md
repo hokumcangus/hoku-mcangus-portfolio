@@ -1,19 +1,30 @@
-# vite-template-redux
+# Hoku McAngus | Digital Wayfinder Portfolio 🛶✨
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+This is a modern, full-stack React/Redux portfolio themed around **Hoku Navigation**. It blends professional engineering precision with an Aloha-driven heart.
 
-```sh
-npx tiged reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+---
 
-## Goals
+## 🧭 Navigating this Project
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+If you are new here or looking to understand how the code works, please read our:
+👉 **[MENTOR_GUIDE.md](./MENTOR_GUIDE.md)**
 
-## Scripts
+This guide explains:
+*   **The Ship (React):** How the UI is built.
+*   **The Compass (Redux):** How your data is managed.
+*   **The Map (Router):** How to navigate the shoreline.
+
+---
+
+## 🚀 Getting Started
+
+To see your portfolio in action:
+
+1.  **Install dependencies:** `npm install`
+2.  **Start the voyage:** `npm start`
+3.  **Visit the shoreline:** Open `http://localhost:5173` in your browser.
+
+## 🛠️ Scripts
 
 - `dev`/`start` - start dev server and open browser
 - `build` - build for production
