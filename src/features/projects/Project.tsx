@@ -2,7 +2,7 @@ import { addProject } from "./projectSlice"
 import { useAppDispatch } from "../../app/hooks.ts"
 
 // Add projectSlice to the combineSlices call
-// const rootReducer = combineSlices(counterSlice, quotesApiSlice, projectSlice)
+// const rootReducer = combineSlices(counterSlice, projectSlice)
 
 const AddProjectButton = () => {
   const dispatch = useAppDispatch()

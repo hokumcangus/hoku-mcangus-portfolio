@@ -6,7 +6,7 @@ describe("App", () => {
 	it("renders the home page heading", () => {
 		renderWithProviders(<App />)
 		expect(
-			screen.getByRole("heading", { name: /aloha and welcome to my portfolio!/i }),
+			screen.getByRole("heading", { name: /Full-Stack Engineer & Digital Wayfinder/i }),
 		).toBeInTheDocument()
 	})
 })
