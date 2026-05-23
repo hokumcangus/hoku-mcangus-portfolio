@@ -1,0 +1,138 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--ocean-deep);
+}
+
+.contact-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-brand-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--star-gold);
+  text-decoration: none;
+}
+
+.contact-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-nav-link {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.contact-nav-link.is-active {
+  color: var(--star-gold);
+  font-weight: 700;
+}
+
+.contact-main {
+  flex: 1;
+  padding: 4rem 0;
+}
+
+.contact-container {
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-intro {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-form-card {
+  background-color: var(--ocean-blue);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-field {
+  margin-bottom: 1.5rem;
+}
+
+.contact-field-message {
+  margin-bottom: 2rem;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--sand-beige);
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: white;
+}
+
+.contact-submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--star-gold);
+  color: var(--ocean-deep);
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-social {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-social-label {
+  color: var(--text-secondary);
+}
+
+.contact-social-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-social-link {
+  color: var(--star-gold);
+  text-decoration: none;
+}
+
+.contact-footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.contact-footer-copy {
+  color: var(--text-secondary);
+}

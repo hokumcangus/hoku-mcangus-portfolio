@@ -1,0 +1,163 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--ocean-deep);
+}
+
+.home-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-brand-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--star-gold);
+  text-decoration: none;
+}
+
+.home-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home-nav-link {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.home-main {
+  flex: 1;
+}
+
+.home-hero {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: var(--ocean-blue);
+}
+
+.home-hero-kicker {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sand-beige);
+  margin-bottom: 1rem;
+}
+
+.home-hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.home-hero-text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.home-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home-btn {
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.home-btn-primary {
+  background-color: var(--star-gold);
+  color: var(--ocean-deep);
+}
+
+.home-btn-secondary {
+  border: 1px solid var(--star-gold);
+  color: var(--star-gold);
+}
+
+.home-north-star {
+  padding: 4rem 0;
+}
+
+.home-north-star-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.home-north-star-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-north-star-text {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-north-star-values {
+  display: flex;
+  gap: 2rem;
+}
+
+.home-value-title {
+  color: var(--star-gold);
+  margin: 0 0 0.5rem;
+}
+
+.home-value-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.home-north-star-visual {
+  background-color: var(--ocean-blue);
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-north-star-icon {
+  font-size: 4rem;
+}
+
+.home-footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.home-footer-copy {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.home-footer-copyright {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 900px) {
+  .home-north-star-grid {
+    grid-template-columns: 1fr;
+  }
+}

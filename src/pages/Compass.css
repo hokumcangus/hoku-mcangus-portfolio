@@ -1,0 +1,104 @@
+.compass-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.compass-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--ocean-deep);
+}
+
+.compass-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compass-brand-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--star-gold);
+  text-decoration: none;
+}
+
+.compass-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.compass-nav-link {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.compass-nav-link.is-active {
+  color: var(--star-gold);
+  font-weight: 700;
+}
+
+.compass-main {
+  flex: 1;
+  padding: 4rem 0;
+}
+
+.compass-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.compass-intro {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.compass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.compass-card {
+  background-color: var(--ocean-blue);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.compass-card-title {
+  color: var(--star-gold);
+  margin-bottom: 1rem;
+}
+
+.compass-card-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.compass-quote-shell {
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: rgba(255, 215, 0, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.compass-quote-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.compass-footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.compass-footer-copy {
+  color: var(--text-secondary);
+}
