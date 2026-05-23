@@ -1,41 +1,111 @@
 :root {
-  --ocean-deep: #0a192f;
-  --ocean-blue: #172a45;
-  --sand-beige: #f5f5dc;
-  --star-gold: #ffd700;
-  --island-green: #2e8b57;
-  --text-primary: #e6f1ff;
-  --text-secondary: #8892b0;
+  --ocean-deep: #152319;
+  --ocean-blue: #243b2b;
+  --sand-beige: #f4e8d0;
+  --star-gold: #f2b54a;
+  --island-green: #4f7f55;
+  --text-primary: #fbf3e6;
+  --text-secondary: #d9c9ad;
+  --fern-shadow: #0d160f;
+  --sunset-coral: #d97b4f;
 }
 
 body {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Nunito Sans", "Trebuchet MS", "Verdana", sans-serif;
   background-color: var(--ocean-deep);
+  background-image:
+    radial-gradient(circle at 8% 14%, rgba(242, 181, 74, 0.14), transparent 34%),
+    radial-gradient(circle at 85% 12%, rgba(79, 127, 85, 0.26), transparent 41%),
+    radial-gradient(circle at 72% 84%, rgba(217, 123, 79, 0.16), transparent 31%),
+    linear-gradient(180deg, #1f3125 0%, #18281d 35%, #131f17 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
+  line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--star-gold);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+p, a, button, input, textarea, label {
+  font-family: "Nunito Sans", "Trebuchet MS", "Verdana", sans-serif;
 }
 
 a {
   color: var(--star-gold);
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.92;
+  color: var(--sand-beige);
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+main {
+  animation: hulaFadeIn 620ms ease-out;
+}
+
+main .container > div[style*="grid"] > div {
+  animation: hulaCardRise 460ms ease-out;
+  animation-fill-mode: both;
+}
+
+main .container > div[style*="grid"] > div:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+main .container > div[style*="grid"] > div:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+button {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+@keyframes hulaFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hulaCardRise {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.1rem;
+  }
 }
 
 code {
