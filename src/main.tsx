@@ -4,7 +4,6 @@ import { Provider } from "react-redux"
 import App from "./App"
 import { store } from "./app/store"
 import "./index.css"
-import About from "./pages/About"
 
 const container = document.getElementById("root")
 
@@ -15,7 +14,6 @@ if (container) {
     <StrictMode>
       <Provider store={store}>
         <App />
-        <About />
       </Provider>
     </StrictMode>,
   )
