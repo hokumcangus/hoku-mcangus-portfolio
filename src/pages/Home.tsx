@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import ProjectCard from "../components/projects/ProjectCard"
 import { projects } from "../data/projects"
 
@@ -14,19 +15,19 @@ export default function Home() {
           maintainable architecture, and practical real-world functionality.
         </p>
         <div className="hero-actions">
-          <a className="button primary" href="/projects">
+          <Link className="button primary" to="/projects">
             View Projects
-          </a>
-          <a className="button" href="/contact">
+          </Link>
+          <Link className="button" to="/contact">
             Contact Me
-          </a>
+          </Link>
         </div>
       </section>
 
       <section className="section-block">
         <div className="section-heading">
           <h2>Featured Projects</h2>
-          <a href="/projects">See all projects</a>
+          <Link to="/projects">See all projects</Link>
         </div>
         <div className="projects-grid">
           {featuredProjects.map(project => (
