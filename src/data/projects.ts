@@ -2,7 +2,7 @@ export type Project = {
   description: string
   id: string
   imageUrl?: string
-  liveUrl: string
+  liveUrl?: string
   sourceUrl?: string
   tags: string[]
   title: string
@@ -25,7 +25,6 @@ export const projects: Project[] = [
     description:
       "A clean multi-page portfolio experience with reusable components and accessible navigation.",
     tags: ["React", "Vite", "Accessibility"],
-    liveUrl: "https://example.com/portfolio",
     sourceUrl: "https://github.com/hokumcangus/hoku-mcangus-portfolio",
     featured: true,
   },
@@ -35,6 +34,5 @@ export const projects: Project[] = [
     description:
       "A productivity dashboard focused on clear visual hierarchy, quick updates, and mobile-first layouts.",
     tags: ["UI/UX", "Dashboard", "Frontend"],
-    liveUrl: "https://example.com/dashboard",
   },
 ]
