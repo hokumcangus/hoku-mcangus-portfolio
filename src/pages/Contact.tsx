@@ -1,6 +1,7 @@
 import { storyContent } from "../data/storyContent"
 
 function Contact() {
+  const { email, linkedIn } = storyContent.connect
   return (
     <div className="site-shell page-content">
       <section className="section-block">
@@ -12,13 +13,13 @@ function Contact() {
         <h2>{storyContent.connect.cta}</h2>
         <ul>
           <li>
-            Email: <a href="mailto:hoku@example.com">hoku@example.com</a>
+            Email: <a href={`mailto:${email}`}>{email}</a>
           </li>
           <li>
             GitHub: <a href="https://github.com/hokumcangus">github.com/hokumcangus</a>
           </li>
           <li>
-            LinkedIn: <a href="https://www.linkedin.com">linkedin.com</a>
+            LinkedIn: <a href={linkedIn.url}>{linkedIn.label}</a>
           </li>
         </ul>
         <p>{storyContent.connect.footer}</p>

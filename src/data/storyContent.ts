@@ -107,5 +107,10 @@ export const storyContent = {
     cta: "E komo mai",
     footer:
       "Mahalo for stopping by. Wishing you and your ohana good vibes and good days.",
+    email: "hoku@example.com", // TODO: replace with real email before shipping
+    linkedIn: {
+      url: "https://www.linkedin.com/in/hokumcangus",
+      label: "linkedin.com/in/hokumcangus",
+    },
   },
 } as const
