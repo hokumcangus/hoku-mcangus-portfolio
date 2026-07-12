@@ -10,7 +10,7 @@ test("renders portfolio navigation and home content", () => {
   expect(
     screen.getByRole("heading", {
       level: 1,
-      name: /hi, i'm hoku mcangus/i,
+      name: /living the dream/i,
     }),
   ).toBeInTheDocument()
 
@@ -43,5 +43,5 @@ test("navigates to about page when about link is clicked", async () => {
 
   await user.click(screen.getByRole("link", { name: "About" }))
 
-  expect(screen.getByRole("heading", { level: 1, name: "About" })).toBeInTheDocument()
+  expect(screen.getByRole("heading", { level: 1, name: "My Journey" })).toBeInTheDocument()
 })

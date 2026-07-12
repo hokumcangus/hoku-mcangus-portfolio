@@ -1,35 +1,59 @@
-const skillGroups = {
-  Frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
-  "Tools & Workflow": ["Git", "GitHub", "Vite", "Testing Library", "Responsive Design"],
-  Strengths: ["Clear communication", "Component architecture", "Product-minded delivery"],
-}
+import { storyContent } from "../data/storyContent"
 
 function About() {
   return (
     <div className="site-shell page-content">
       <section className="section-block">
-        <h1>About</h1>
-        <p>
-          I&apos;m a developer focused on creating polished, accessible, and responsive web
-          applications. I enjoy taking ideas from concept to production-quality interfaces.
-        </p>
-        <p>
-          My approach blends strong UI craftsmanship with practical engineering decisions so
-          products are not only attractive, but maintainable and effective.
-        </p>
+        <h1>{storyContent.journey.title}</h1>
+        <p>{storyContent.journey.subtitle}</p>
+        <p>{storyContent.journey.description}</p>
       </section>
 
       <section className="section-block skills-grid">
-        {Object.entries(skillGroups).map(([groupName, skills]) => (
-          <article key={groupName}>
-            <h2>{groupName}</h2>
-            <ul>
-              {skills.map(skill => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
+        {storyContent.journey.chapters.map(chapter => (
+          <article key={chapter.chapter}>
+            <h2>{chapter.chapter}</h2>
+            <p>
+              <strong>{chapter.title}</strong>
+            </p>
+            <p>{chapter.role}</p>
+            <p>{chapter.lesson}</p>
+            <p>{chapter.text}</p>
           </article>
         ))}
+      </section>
+
+      <section className="section-block">
+        <h2>{storyContent.toolbox.title}</h2>
+        <p>{storyContent.toolbox.subtitle}</p>
+        <ul>
+          {storyContent.toolbox.skills.map(skill => (
+            <li key={skill}>{skill}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section-block skills-grid">
+        {storyContent.toolbox.builds.map(build => (
+          <article key={build.title}>
+            <h2>{build.label}</h2>
+            <p>
+              <strong>{build.title}</strong>
+            </p>
+            <p>{build.description}</p>
+          </article>
+        ))}
+      </section>
+
+      <section className="section-block">
+        <h2>{storyContent.compass.title}</h2>
+        <p>{storyContent.compass.subtitle}</p>
+        <ul>
+          {storyContent.compass.principles.map(principle => (
+            <li key={principle}>{principle}</li>
+          ))}
+        </ul>
+        <p>{storyContent.compass.quote}</p>
       </section>
     </div>
   )

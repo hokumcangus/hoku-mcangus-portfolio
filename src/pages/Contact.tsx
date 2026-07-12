@@ -1,16 +1,15 @@
+import { storyContent } from "../data/storyContent"
+
 function Contact() {
   return (
     <div className="site-shell page-content">
       <section className="section-block">
-        <h1>Contact</h1>
-        <p>
-          Want to collaborate, hire me, or talk through a project? Reach out through any of
-          the channels below.
-        </p>
+        <h1>{storyContent.connect.title}</h1>
+        <p>{storyContent.connect.intro}</p>
       </section>
 
       <section className="section-block contact-card">
-        <h2>Get in touch</h2>
+        <h2>{storyContent.connect.cta}</h2>
         <ul>
           <li>
             Email: <a href="mailto:hoku@example.com">hoku@example.com</a>
@@ -22,6 +21,7 @@ function Contact() {
             LinkedIn: <a href="https://www.linkedin.com">linkedin.com</a>
           </li>
         </ul>
+        <p>{storyContent.connect.footer}</p>
       </section>
     </div>
   )

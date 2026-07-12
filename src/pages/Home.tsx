@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import ProjectCard from "../components/projects/ProjectCard"
 import { projects } from "../data/projects"
+import { storyContent } from "../data/storyContent"
 
 const featuredProjects = projects.filter(project => project.featured)
 
@@ -8,18 +9,16 @@ export default function Home() {
   return (
     <div className="site-shell page-content home-page">
       <section className="hero">
-        <p className="eyebrow">Software Developer Portfolio</p>
-        <h1>Hi, I&apos;m Hoku McAngus — I build modern web experiences.</h1>
-        <p>
-          I design and develop responsive, user-friendly applications with clean UI,
-          maintainable architecture, and practical real-world functionality.
-        </p>
+        <p className="eyebrow">{storyContent.hero.kicker}</p>
+        <h1>{storyContent.hero.title}</h1>
+        <p>{storyContent.hero.subtitle}</p>
+        <p>{storyContent.hero.heading}</p>
         <div className="hero-actions">
           <Link className="button primary" to="/projects">
-            View Projects
+            {storyContent.hero.ctaPrimary}
           </Link>
           <Link className="button" to="/contact">
-            Contact Me
+            {storyContent.hero.ctaSecondary}
           </Link>
         </div>
       </section>
