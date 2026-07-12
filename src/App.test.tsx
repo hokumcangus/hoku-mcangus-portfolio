@@ -24,11 +24,17 @@ test("projects page renders project cards with external links", () => {
   window.history.pushState({}, "", "/projects")
   renderWithProviders(<App />)
 
+  const featuredProject = projects.find((project) => project.id === "lovable-demo")
+  expect(featuredProject).toBeDefined()
+
   expect(screen.getByRole("heading", { level: 1, name: /projects/i })).toBeInTheDocument()
-  expect(screen.getByText(projects[0].title)).toBeInTheDocument()
+  expect(screen.getByText(featuredProject!.title)).toBeInTheDocument()
 
   const liveDemoLinks = screen.getAllByRole("link", { name: "Live Demo" })
-  expect(liveDemoLinks[0]).toHaveAttribute("href", projects[0].liveUrl)
+  const matchingLiveDemoLink = liveDemoLinks.find(
+    (link) => link.getAttribute("href") === featuredProject!.liveUrl,
+  )
+  expect(matchingLiveDemoLink).toBeInTheDocument()
 })
 
 test("navigates to about page when about link is clicked", async () => {
