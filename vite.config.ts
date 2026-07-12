@@ -7,7 +7,7 @@ import packageJson from "./package.json" with { type: "json" }
 export default defineConfig({
   plugins: [react()],
 
-  base: "/hoku-mcangus-portfolio/",
+  base: `/${packageJson.name}/`,
 
   server: {
     open: true,
