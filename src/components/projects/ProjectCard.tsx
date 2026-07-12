@@ -18,11 +18,11 @@ function ProjectCard({ project }: ProjectCardProps) {
         ))}
       </ul>
       <div className="project-links">
-        <a href={project.liveUrl} rel="noreferrer" target="_blank">
+        <a href={project.liveUrl} rel="noreferrer noopener" target="_blank">
           Live Demo
         </a>
         {project.sourceUrl ? (
-          <a href={project.sourceUrl} rel="noreferrer" target="_blank">
+          <a href={project.sourceUrl} rel="noreferrer noopener" target="_blank">
             Source Code
           </a>
         ) : null}

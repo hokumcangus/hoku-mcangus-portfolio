@@ -37,6 +37,7 @@ function Header() {
             <NavLink
               key={item.to}
               className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+              end={item.to === "/"}
               onClick={() => setIsMenuOpen(false)}
               to={item.to}
             >
