@@ -187,6 +187,15 @@ a {
   transform: translateY(-2px);
 }
 
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+}
+
 .project-card h3 {
   margin: 0 0 0.5rem;
 }
