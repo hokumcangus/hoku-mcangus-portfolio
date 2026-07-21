@@ -7,6 +7,8 @@ import packageJson from "./package.json" with { type: "json" }
 export default defineConfig({
   plugins: [react()],
 
+  base: `/${packageJson.name}/`,
+
   server: {
     open: true,
   },
@@ -24,5 +26,10 @@ export default defineConfig({
     globals: true,
     watch: false,
     setupFiles: ["./src/setupTests.ts"],
+
+    // Override BASE_URL so BrowserRouter basename resolves to "/" during tests
+    env: {
+      BASE_URL: "/",
+    },
   },
 })
