@@ -12,6 +12,16 @@
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
+.glass {
+  background: rgba(255, 255, 255, 0.2); /* must be transparent */
+  /* -webkit-backdrop-filter: blur(8px); Safari support */
+  /* backdrop-filter: blur(8px); */
+
+  /* -webkit-backdrop-filter: blur(8px); Safari support */
+  border-radius: 12px;
+  padding: 20px;
+}
+
 
 .App-header {
   min-height: 100vh;

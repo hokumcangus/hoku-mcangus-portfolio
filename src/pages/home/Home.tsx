@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import ProjectCard from "../../projects/ProjectCard"
+// import ProjectCard from "../projects/ProjectCard"
 import { projects } from "../../data/projects"
 import { storyContent } from "../../data/storyContent"
 
@@ -26,12 +26,12 @@ export default function Home() {
       <section className="section-block">
         <div className="section-heading">
           <h2>Featured Projects</h2>
-          <Link to="/projects">See all projects</Link>
+          {/* <Link to="/projects">See all projects</Link> */}
         </div>
         <div className="projects-grid">
-          {featuredProjects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          {/* {featuredProjects.map(project => ( */}
+            {/* // <ProjectCard key={project.id} project={project} /> */}
+          {/* )} */}
         </div>
       </section>
     </div>
