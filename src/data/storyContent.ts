@@ -1,10 +1,10 @@
 export const storyContent = {
   hero: {
-    kicker: "Aloha, I'm",
+    kicker: "Aloha",
     title: "Living the Dream",
     subtitle:
-      "From late-night mops to morning standups — a rise-up story with island roots and reggae soul.",
-    heading: "Full-Stack Engineer with Island Rhythm",
+      "A story of grit, aloha, and the long walk from Custodian to Full‑Stack Engineer.",
+    heading: "Full‑Stack Engineer & Digital Story Dancer",
     ctaPrimary: "Join my ohana",
     ctaSecondary: "Talk story",
   },
@@ -13,49 +13,70 @@ export const storyContent = {
     title: "My Journey",
     subtitle: "From Custodian to Software Engineer",
     description:
-      "Five tracks. One album. A story built on rhythm, resilience, and roots.",
+      "Five chapters. One long chant. Every step taught me something real.",
     chapters: [
       {
-        chapter: "Track 1",
+        chapter: "Chapter I",
         title: "The Broom & The Dream",
-        role: "Custodian",
+        role: "Custodian — 8+ Years",
         lesson: "Hoomaka — The Beginning",
-        text: "Midnight shifts had their own tempo — the hum of vacuums, the echo of empty halls, and me whispering promises into the quiet. This wasn’t the end of the song. It was the intro.",
+        text:
+          "Night‑shift custodial at UW Bothell. Empty hallways, quiet floors, and a dream that wouldn’t let go. I learned discipline, consistency, and how to solve problems with whatever tools I had. This was the foundation.",
       },
       {
-        chapter: "Track 2",
+        chapter: "Chapter II",
         title: "First Lines of Code",
-        role: "Self-Taught Beginner",
+        role: "Self‑Taught Beginner",
         lesson: "Ao — To Learn",
-        text: "A borrowed laptop, free tutorials, and a dream that refused to fade. My first 'Hello, World' hit like the first chord of a Rebelution track — warm, bright, full of possibility.",
+        text:
+          "Borrowed laptop. Free tutorials. The first 'Hello, World' felt like sunrise. Every loop became a step forward, every function a chant of possibility.",
       },
       {
-        chapter: "Track 3",
-        title: "Bootcamp Grind",
-        role: "Student",
+        chapter: "Chapter III",
+        title: "Ada & Bootstraps",
+        role: "Ada Developers Academy",
         lesson: "Hana — The Work",
-        text: "React debugging at 2 AM, custodial shifts at 4 AM, and island reggae in my headphones keeping my heartbeat steady. Three worlds, one rhythm — forward.",
+        text:
+          "Ada sharpened my skills and gave me the confidence to build real systems. Long nights of debugging, early mornings of studying, and the moment I realized: I can do this.",
       },
       {
-        chapter: "Track 4",
-        title: "The Offer",
+        chapter: "Chapter IV",
+        title: "Nordstrom & The Offer",
         role: "Software Engineer I",
         lesson: "Lanakila — Victory",
-        text: "One email flipped the beat. Custodian keys traded for an IDE, a badge, and a seat at the table I used to clean. The chorus finally hit.",
+        text:
+          "My internship turned into a full‑time offer. I worked across full‑stack development, reliability, and distributed debugging. Custodian keys became an IDE and a Slack handle.",
       },
       {
-        chapter: "Track 5",
+        chapter: "Chapter V",
+        title: "Taste of Aloha",
+        role: "Engineer & Helper",
+        lesson: "Kuleana — Responsibility",
+        text:
+          "I returned to help my ‘ohana’s restaurant. Fast‑paced, high‑pressure, full of heart. I started designing a custom ordering app inspired by Menufy and DoorDash — something simple, local, and made with aloha.",
+      },
+      {
+        chapter: "Chapter VI",
+        title: "The Warehouse Grind",
+        role: "Warehouse Selector — Frito‑Lay",
+        lesson: "Ikaika — Strength",
+        text:
+          "Fast‑paced, tough, and unforgiving. Pulling and boxing Frito‑Lay products sharpened my speed, accuracy, and resilience. It taught me how to stay calm under pressure and move with intention.",
+      },
+      {
+        chapter: "Today",
         title: "Living the Dream",
-        role: "Engineer, Music Lover & Storyteller",
+        role: "AI Trainer & LLM Evaluator",
         lesson: "Mahalo — Gratitude",
-        text: "Now I build software with the same energy I grew up with — island warmth, steady rhythm, and a belief that every dreamer deserves their own anthem.",
+        text:
+          "I teach AI models how to reason more clearly and evaluate complex outputs. It’s a blend of engineering, analysis, and creativity — and a reminder that origin stories don’t have ceilings.",
       },
     ],
   },
 
   toolbox: {
     title: "The Toolbox",
-    subtitle: "Instruments of the craft",
+    subtitle: "Tools of the dance",
     skills: [
       "TypeScript — Daily driver",
       "React — Comfortable",
@@ -64,26 +85,26 @@ export const storyContent = {
       "Python — Scripts & tools",
       "AWS — Exploring",
       "Git — Daily driver",
-      "Resilience — Island strong",
+      "Resilience — Black belt",
     ],
     builds: [
       {
         label: "Side Project",
         title: "Halau Helper",
         description:
-          "A React + TypeScript app for practice schedules, mele lyrics, and ʻōlelo translations — built with aloha and intention.",
+          "A React + TypeScript app for hula practice schedules, mele lyrics, and ʻōlelo translations.",
       },
       {
         label: "Open Source",
         title: "Lei API",
         description:
-          "A small Node service that generates digital lei greetings — a lightweight project tuned to learn REST and deployment.",
+          "A small Node service that generates digital lei greetings. Built to learn REST and deployment.",
       },
       {
         label: "From the Trenches",
         title: "Custodial CRM",
         description:
-          "A scheduling tool inspired by real custodial workflows — built to honor the grind that shaped me.",
+          "A scheduling tool inspired by custodial workflows. Built, shared, and open‑sourced.",
       },
     ],
   },
@@ -91,26 +112,16 @@ export const storyContent = {
   compass: {
     title: "The Compass",
     subtitle: "How I build",
-    principles: [
-      "Clarity — like a clean mix",
-      "Aloha — warmth in every interaction",
-      "Craft — tuned with intention",
-      "Story — every feature has a melody",
-    ],
+    principles: ["Clarity", "Aloha", "Craft", "Story"],
     quote:
-      "I build with rhythm. I build with roots. I build with the kind of hope you feel in your chest when the bassline hits.",
+      "I build with intention. I build with heart. I build with the stars in mind.",
   },
 
   connect: {
     title: "Join the ohana",
-    intro: "Let’s talk story — whether you're hiring, building, or just vibing.",
+    intro:
+      "Let's talk story! Whether you're hiring, building, or just want to connect.",
     cta: "E komo mai",
-    footer:
-      "Mahalo for stopping by. Wishing you and your ohana good vibes and good days.",
-    email: "hoku@example.com", // TODO: replace with real email before shipping
-    linkedIn: {
-      url: "https://www.linkedin.com/in/hokumcangus",
-      label: "linkedin.com/in/hokumcangus",
-    },
+    footer: "Mahalo for stopping by! Wishing you and your ohana da best!",
   },
-} as const
+} as const;

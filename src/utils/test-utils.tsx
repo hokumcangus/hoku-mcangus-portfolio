@@ -53,7 +53,8 @@ export const renderWithProviders = (
   } = extendedRenderOptions
 
   const Wrapper = ({ children }: PropsWithChildren) => (
-    <Provider store={store}>{children}</Provider>
+    <Provider store={st
+      ore}>{children}</Provider>
   )
 
   // Return an object with the store and all of RTL's query functions

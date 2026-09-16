@@ -33,7 +33,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(8px);
+  /* -webkit-backdrop-filter: blur(8px); Safari support */
+  /* backdrop-filter: blur(8px); */
   background: rgb(248 250 252 / 92%);
   border-bottom: 1px solid #dbe4ff;
 }
